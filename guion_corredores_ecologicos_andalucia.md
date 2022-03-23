@@ -249,7 +249,7 @@ Una vez concluido el informe, deberás subirlo [aquí](https://www.turnitin.com/
 
 ## Información necesaria para hacer el ejercicio
 
-+ Este archivo .zip tiene las siguientes capas que necesitarás para hacer el trabajo.:
++ [Este](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/geoinfo/criterios.zip) archivo .zip tiene las siguientes capas que necesitarás para hacer el trabajo.:
   * Capa de aptitud desde el punto de vista de la biodiversidad.
   * Capa de aptitud desde el punto de vista de la distancia a carreteras.
   * Capa de aptitud desde el punto de vista de la distancia a espacios de la red Natura 2000.
@@ -257,7 +257,7 @@ Una vez concluido el informe, deberás subirlo [aquí](https://www.turnitin.com/
   * Capa de aptitud desde el punto de vista de la naturalidad
   * Capa de aptitud desde el punto de vista de la presencia de vías pecuarias.
   * Capa de aptitud desde el punto de vista del tamaño del ENP más cercano a cada píxel de matriz.
-* Delimitación de los espacios de la Red Natura 2000 en Andalucía.
+* [Aquí](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/geoinfo/Red_Natura_2000_andalucia.zip) puedes descarar la delimitación de los espacios de la Red Natura 2000 en Andalucía.
 
 
 
@@ -284,7 +284,7 @@ En el moodle hay una rúbrica (pincha [aquí](https://es.wikipedia.org/wiki/R%C3
 
 ## Material útil para hacer la tarea
 
-* [*An integrated approach for studying the land suitability for ecological corridors through spatial multicriteria evaluations*](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/biblio/ecological_corridors_multicriteria.pdf). Artículo científco en el que se inspira este ejercicio.
-* [*Natura 2000 sites, public forests and riparian corridors: The connectivity backbone of forest green infrastructure*](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/biblio/ecological_corridors_spain.pdf). Artículo científico en el que se habla de corredores ecológicos en España.
-* [*Multi-criteria decision analysis for nature conservation: A review of 20 years of applications*.](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/biblio/MCE_review.pdf) Revisión sobre el uso de la técnica de evaluación multicriterio aplicada a cuestiones ambientales.
+* [*An integrated approach for studying the land suitability for ecological corridors through spatial multicriteria evaluations*](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/biblio/ecological_corridors_multicriteria.pdf). Artículo científco en el que se inspira este ejercicio.
+* [*Natura 2000 sites, public forests and riparian corridors: The connectivity backbone of forest green infrastructure*](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/biblio/ecological_corridors_spain.pdf). Artículo científico en el que se habla de corredores ecológicos en España.
+* [*Multi-criteria decision analysis for nature conservation: A review of 20 years of applications*.](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/biblio/MCE_review.pdf) Revisión sobre el uso de la técnica de evaluación multicriterio aplicada a cuestiones ambientales.
 

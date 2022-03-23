@@ -35,11 +35,11 @@ Esta práctica se sustenta en la teoría de la biogeografía de islas. Lamentabl
 
 Supongamos un punto de partida teórico e irreal para esta práctica: nuestra zona de estudio, Andalucía, no está ocupada por humanos. Solo hay naturaleza. La siguiente imagen muestra cómo podría ser esta situación: bosques densos en mitad del valle del Guadalquivir y ausencia de infraestructuras humanas. 
 
-<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/01_natural.jpeg" alt="naturaleza" style="zoom:100%;" />
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/01_natural.jpeg" alt="naturaleza" style="zoom:100%;" />
 
 Sin embargo, la realidad es bien diferente. El territorio se encuentra profundamente fragmentado y alterado por la actividad humana. El paisaje de Andalucía es en la actualidad una matriz de cultivos en los cuales se inserta una serie de islas de naturaleza. La siguiente imagen muestra la situación real de nuestra región.
 
-<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/03_islas.jpeg" alt="naturaleza" style="zoom:100%;" />
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/03_islas.jpeg" alt="naturaleza" style="zoom:100%;" />
 
 En este contexto, cuando los sistemas naturales están fragmentados, es importante conocer en qué medida el tamaño de las islas naturales existentes pueden sostener la diversidad total del sistema. Aquí es donde, en este caso, entra la biogeografía de islas. Esta teoría explica cómo cambia la diversidad de una serie de islas inmersas en una matriz no apta para la supervivencia de ciertas especies. Lo hace con las siguientes afirmaciones:
 
@@ -50,7 +50,7 @@ En este contexto, cuando los sistemas naturales están fragmentados, es importan
 
 Estos preceptos de la biogeografía de islas se aplican bien al diseño de redes de espacios protegidos. La siguiente figura muestra alguna de las ideas que se aplican en este sentido:
 
-<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/04_enps_islas.jpg" alt="naturaleza" style="zoom:100%;" />
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/04_enps_islas.jpg" alt="naturaleza" style="zoom:100%;" />
 
 
 
@@ -67,13 +67,13 @@ Andalucía cuenta con una amplia red de espacios naturales protegidos. No en van
 
 
 
-![Mapa 1: Espacios de la Red Natura en Andalucía](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/05_enp.png)
+![Mapa 1: Espacios de la Red Natura en Andalucía](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/05_enp.png)
 
 
 
 Esta red de espacios protegidos incluye buena parte de todo el territorio considerado como "natural" en la región. Es decir, la mayoría de los bosques, matorrales o pastos naturales se encuentran dentro de la red de espacios protegidos. Estos espacios protegidos son las islas de naturaleza que hemos comentado en el apartado anterior. El siguiente mapa muestra la superficie ocupada por "vegetación natural" (verde) y por zonas no "naturales" (naranja. Cultivos, infraestructuras humanas, etc.). También se superponen el contorno de la red Natura 2000 y el de las principales infraestructuras viarias y núcleos urbanos.
 
-![Mapa 2: distribución de vegetación natural en Andalucía](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/06_infraestructuras.png)
+![Mapa 2: distribución de vegetación natural en Andalucía](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/06_infraestructuras.png)
 
 
 
@@ -83,7 +83,7 @@ Para empezar, recuerda que la biogeografía de islas describe cómo cambia la ri
 
 Dicho esto, tienes que generar un mapa que asigne un valor de idoneidad a cada punto del territorio no protegido en función de su capacidad de servir como corredor ecológico. El siguiente mapa muestra nuestra zona de estudio, que comprende todo el territorio andaluz no ocupado por la [Red Natura 2000](https://es.wikipedia.org/wiki/Red_Natura_2000). Ver mapa inferior.
 
-![Zona de estudio](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/07_zona_estudio.png)
+![Zona de estudio](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/07_zona_estudio.png)
 
 Para hacer este análisis tendrás que aplicar la técnica de evaluación multicriterio que aprendimos en la sesión sobre competencia intraespecífica. En este ejercicio, usaremos las siguientes variables ambientales:
 
@@ -99,7 +99,7 @@ Como sabes, el índice de Shannon permite conocer la diversidad de una comunidad
 
 Desde el punto de vista del objetivo de este trabajo, asumiremos que la idoneidad de un punto del territorio aumenta al hacerlo su biodiversidad. Los lugares con mayor índice de Shannon tienen más capacidad de albergar ecosistemas funcionales y por tanto de servir como corredores ecológicos. **Así que a más diversidad de Shannon, más idoneidad**. Es decir, para obtener el mapa de idoneidad se usa una función de transferencia directa y lineal. Abajo puedes descargar el mapa de idoneidad desde el punto de vista de la biodiversidad. El mapa muestra la distribución de la aptitud de cada punto de estudio en función del índice de Shannon. Los colores más azules indican más aptitud (mayor índice de Shannon). El color rojo indica menor aptitud (muy bajo índice de Shannon)
 
-![Mapa aptitud biodiversidad](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/08_apt_biodiv.png)
+![Mapa aptitud biodiversidad](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/08_apt_biodiv.png)
 
 
 
@@ -107,18 +107,18 @@ Desde el punto de vista del objetivo de este trabajo, asumiremos que la idoneida
 
 Según la biogeografía de islas, la distancia entre dos "islas" condiciona la probabilidad de que exista la inmigración. En nuestro caso las islas son los espacios protegidos (incluidos en la red Natura 2000), por lo que podemos asumir que un punto determinado del territorio funcionará tanto mejor como corredor cuanto más cerca esté de un espacio protegido. **A más distancia, menor idoneidad**. Es decir, para obtener este mapa de idoneidad se usó una función de transferencia indirecta y lineal. A continuacón puedes ver el mapa de idoneidad desde el punto de vista de la distancia a espacios de la red Natura 2000. Y [aquí](http://www.juntadeandalucia.es/medioambiente/site/portalweb/menuitem.220de8226575045b25f09a105510e1ca/?vgnextoid=d0e77b32b31f4310VgnVCM1000001325e50aRCRD) tienes información general sobre la red Natura 200 en Andalucía. 
 
-![Mapa de aptitud respecto a distancia a Red Natura 2000](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/09_apt_dist_natura.png)
+![Mapa de aptitud respecto a distancia a Red Natura 2000](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/09_apt_dist_natura.png)
 
 ### Tamaño de los espacios protegidos
 Según la biogeografía de islas, al aumentar el tamaño de un fragmento natural también lo hace la capacidad del mismo de "exportar" especies a la matriz que lo rodea. De esta forma, dos puntos que se encuentren a la misma distancia de una isla (espacio protegido en nuestro caso) tendrán diferente aptitud para actuar como corredor en función del tamaño de la isla que tienen cerca. **Es decir, los puntos de la matriz que estén cerca de una isla grande podrán comportarse como corredores con más probabilidad que los que estén cerca de una isla pequeña.** Implementa esto en un SIG no es fácil. Para hacerlo hemos generado un mapa que asigna a cada píxel ocupado por matriz la superficie del espacio protegido (isla) más cercano. Puedes verlo a continuación:
 
-![Mapa de aptitud respecto al tamaño del ENP más cercano](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/10_apt_dist_tamanio_ENP.png)
+![Mapa de aptitud respecto al tamaño del ENP más cercano](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/10_apt_dist_tamanio_ENP.png)
 
 ### Grado de naturalidad
 
 En este trabajo consideramos que un criterio importante para que un punto pueda ser considerado como corredor ecológico, es su grado de naturalidad. Distinguimos lugares con vegetación natural de otros que no tienen vegetación natural. Esta información procede del mapa [forestal español](https://www.mapa.gob.es/es/cartografia-y-sig/ide/descargas/desarrollo-rural/mfe.aspx). Para transformar esta variable de naturalidad en un criterio de aptitud, se considera que **a más naturalidad, más aptitud**. Como solo hay dos tipos de valores (natural o no natura), el mapa de aptitud generado tiene solo valores de 1 (zonas naturales) y 0 (zonas no naturales). El mapa de abajo muestra la distribuicón del grado de naturalidad.
 
-![Mapa de aptitud según naturalidad](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/11_apt_naturalidad.png)
+![Mapa de aptitud según naturalidad](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/11_apt_naturalidad.png)
 
 
 
@@ -126,13 +126,13 @@ En este trabajo consideramos que un criterio importante para que un punto pueda 
 
 Los criterios descritos anteriormente reflejan los aspectos ecológicos del problema que nos ocupa (biodiversidad, distancia a espacios protegidos, naturalidad de cada punto). Los tres criterios están relacionados con la biogeografía de islas. Sin embargo, además de la ecología, en este caso intervienen otros aspectos clave relacionados con la forma en la que el ser humano modifica el territorio y altera el funcionamiento de las infraestructuras naturales. Uno de los impactos principales procede de las infraestructuras viarias, que fragmentan el territorio e impiden en muchas ocasiones el libre tránsito de la fauna. En este sentido, se considera que la aptitud de un punto del territorio para actuar como corredor ecológico depende de su distancia a una infraestructura viaria. **A más distancia mayor aptitud**. De esta manera, abajo puedes ver un mapa de aptitud desde este punto de vista. Dicho mapa se muestra con la misma paleta de colores que en los demás mapas. 
 
-![Aptitud desde el punto de vista de la distancia a carreteras](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/12_apt_dist_carreteras.png)
+![Aptitud desde el punto de vista de la distancia a carreteras](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/12_apt_dist_carreteras.png)
 
 ### **Distancia a zonas urbanas**
 
 Otro elemento espacial de gran importancia para caracterizar la presencia de corredores ecológicos, son los núcleos urbanos. En este sentido, consideramos que la idoneidad de un punto del territorio para comportarse como corredor es tanto **mayor cuanto mayor sea la distancia al núcleo urbano más cercano**. Abajo puedes ver este mapa de aptitud.
 
-![Mapa de aptitud respecto a la distancia a zonas urbanas](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/13_apt_dist_zona_urbana.png)
+![Mapa de aptitud respecto a la distancia a zonas urbanas](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/13_apt_dist_zona_urbana.png)
 
 
 
@@ -144,7 +144,7 @@ En este ejercicio se considera que un punto ocupado por una vía pecuaria tiene 
 
 Abajo puedes mapa el mapa de idoneidad desde el punto de vista de la presencia de vías pecuarias. 
 
-![Mapa de aptitud respecto a la presencia de vías pecuarias](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/14_apt_vias_pecuarias.png)
+![Mapa de aptitud respecto a la presencia de vías pecuarias](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/14_apt_vias_pecuarias.png)
 
 ## Integración de todas las capas para generar un mapa de corredores ecológicos
 
@@ -169,7 +169,7 @@ El proceso de integración se hace fácilmente con la calculadora de mapas de QG
 
 La siguiente imagen muestra el método con otro ejemplo diferente:
 
-<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/15_pesos_ponderados.png" alt="imagen" style="zoom:40%;" />
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/15_pesos_ponderados.png" alt="imagen" style="zoom:40%;" />
 
 Uno de los problemas del análisis multicriterio es que ocurre una compensación de criterios. Si una variable tiene un valor muy alto en un lugar determinado, puede que el resultado final en ese punto sea alto aunque el valor de un criterio importante en ese punto sea bajo. Esto puede hacer que lugares no adecuados sean etiquetados como sí adecuados. Un ejemplo que ilustra esta situación: imaginemos que queremos montar un equipo de baloncesto. Un buen jugador de baloncesto ha de tener las siguientes características:
 
@@ -195,7 +195,7 @@ Para implementar esta operación en un SIG, usamos dos operadores matemáticos m
 
 La siguiente figura muestra el funcionamiento de estos operadores:
 
-<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/16_operadores_booleanos.png" alt="imagen" style="zoom:40%;" />
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/16_operadores_booleanos.png" alt="imagen" style="zoom:40%;" />
 
 Para aplicar estos operadores a nuestras capas, puedes usar el comando [mosaic de SAGA](https://gis.stackexchange.com/questions/150312/combining-multiple-overlapping-rasters-retain-maximum-value). Este comando está disponible en QGIS. En algunas versiones de QGIS los operadores **Y** y **O** están disponibles en la calculadora de mapas. 
 
@@ -249,7 +249,7 @@ Una vez concluido el informe, deberás subirlo [aquí](https://www.turnitin.com/
 
 ## Información necesaria para hacer el ejercicio
 
-+ [Este](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/geoinfo/criterios.zip) archivo .zip tiene las siguientes capas que necesitarás para hacer el trabajo.:
++ [Este](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/geoinfo/criterios.zip) archivo .zip tiene las siguientes capas que necesitarás para hacer el trabajo.:
   * Capa de aptitud desde el punto de vista de la biodiversidad.
   * Capa de aptitud desde el punto de vista de la distancia a carreteras.
   * Capa de aptitud desde el punto de vista de la distancia a espacios de la red Natura 2000.
@@ -257,7 +257,7 @@ Una vez concluido el informe, deberás subirlo [aquí](https://www.turnitin.com/
   * Capa de aptitud desde el punto de vista de la naturalidad
   * Capa de aptitud desde el punto de vista de la presencia de vías pecuarias.
   * Capa de aptitud desde el punto de vista del tamaño del ENP más cercano a cada píxel de matriz.
-* [Aquí](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/geoinfo/Red_Natura_2000_andalucia.zip) puedes descarar la delimitación de los espacios de la Red Natura 2000 en Andalucía.
+* [Aquí](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/geoinfo/Red_Natura_2000_andalucia.zip) puedes descarar la delimitación de los espacios de la Red Natura 2000 en Andalucía.
 
 
 
@@ -284,7 +284,18 @@ En el moodle hay una rúbrica (pincha [aquí](https://es.wikipedia.org/wiki/R%C3
 
 ## Material útil para hacer la tarea
 
-* [*An integrated approach for studying the land suitability for ecological corridors through spatial multicriteria evaluations*](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/biblio/ecological_corridors_multicriteria.pdf). Artículo científco en el que se inspira este ejercicio.
-* [*Natura 2000 sites, public forests and riparian corridors: The connectivity backbone of forest green infrastructure*](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/biblio/ecological_corridors_spain.pdf). Artículo científico en el que se habla de corredores ecológicos en España.
-* [*Multi-criteria decision analysis for nature conservation: A review of 20 years of applications*.](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/biblio/MCE_review.pdf) Revisión sobre el uso de la técnica de evaluación multicriterio aplicada a cuestiones ambientales.
+* [*An integrated approach for studying the land suitability for ecological corridors through spatial multicriteria evaluations*](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/biblio/ecological_corridors_multicriteria.pdf). Artículo científco en el que se inspira este ejercicio.
+* [*Natura 2000 sites, public forests and riparian corridors: The connectivity backbone of forest green infrastructure*](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/biblio/ecological_corridors_spain.pdf). Artículo científico en el que se habla de corredores ecológicos en España.
+* [*Multi-criteria decision analysis for nature conservation: A review of 20 years of applications*.](https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/biblio/MCE_review.pdf) Revisión sobre el uso de la técnica de evaluación multicriterio aplicada a cuestiones ambientales.
 
+
+
+## Evaluación de la sesión según los estudiantes
+
+Aquí puedes ver los resultados que, por ahora, arroja [esta](https://docs.google.com/forms/d/e/1FAIpQLScbCKaNkzzjV5bH0yek41FO-KS7LtLhT_ilITS_ZR0Z2XJyCA/viewform?usp=sf_link) encuesta sobre grado de satisfacción de los objetivos planteados. Por favor, rellénala si no lo has hecho ya. Se tardan 10 segundos y sus resultados son de gran utilidad para mejorar los contenidos cada año. Gracias.
+
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/cumplimiento_objetivos.png" alt="image" style="zoom:50%;" />
+
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/desempenio_profesor.png" alt="image" style="zoom:50%;" />
+
+Además, un estudiante dejó el siguiente comentario en el apartado de "sugerencias":

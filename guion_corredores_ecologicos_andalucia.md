@@ -33,9 +33,22 @@ Antes de detallar en qué consiste el ejercicio, lee el siguiente apartado en el
 
 Esta práctica se sustenta en la teoría de la biogeografía de islas. Lamentablemente impartimos la práctica antes de ver los contenidos teóricos. Así que, en este apartado resumimos las ideas principales de la biogeografía de islas que necesitamos para hacer la práctica. 
 
+Supongamos un punto de partida teórico e irreal para esta práctica: nuestra zona de estudio, Andalucía, no está ocupada por humanos. Solo hay naturaleza. La siguiente imagen muestra cómo podría ser esta situación: bosques densos en mitad del valle del Guadalquivir y ausencia de infraestructuras humanas. 
 
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/01_natural.jpeg" alt="naturaleza" style="zoom:100%;" />
 
-Supongamos un punto de partida teórico e irreal para esta práctica: nuestra zona de estudio, Andalucía, no está ocupada por humanos. Solo hay naturaleza. La siguiente imagen muestra cómo podría ser esta situación: bosques densos en mitad del valle del Guadalquivir y ausencia de infraestructuras humanas.
+Sin embargo, la realidad es bien diferente. El territorio se encuentra profundamente fragmentado y alterado por la actividad humana. El paisaje de Andalucía es en la actualidad una matriz de cultivos en los cuales se inserta una serie de islas de naturaleza. La siguiente imagen muestra la situación real de nuestra región.
+
+<img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/main/images/03_islas.jpeg" alt="naturaleza" style="zoom:100%;" />
+
+En este contexto, cuando los sistemas naturales están fragmentados, es importante conocer en qué medida el tamaño de las islas naturales existentes pueden sostener la diversidad total del sistema. Aquí es donde, en este caso, entra la biogeografía de islas. Esta teoría explica cómo cambia la diversidad de una serie de islas inmersas en una matriz no apta para la supervivencia de ciertas especies. Lo hace con las siguientes afirmaciones:
+
++ Cuanto más grande es una isla, más especies alberga.
++ Cuanto más grande es una isla, más cantidad de especies recibe vía inmigración.
++ Cuanto más grande es una isla, menor es la probabilidad de extinción de especies en su interior.
++ Cuanto más lejos está una isla de otras, menor es la probabilidad de que a la primera llegen individuos de otras islas. 
+
+Estos preceptos de la biogeografía de islas se aplican bien al diseño de redes de espacios protegidos. La siguiente figura muestra alguna de las ideas que se aplican en este sentido:
 
 
 

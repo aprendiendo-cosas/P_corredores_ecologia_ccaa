@@ -222,26 +222,16 @@ Para reclasificar una capa rastser en QGIS, buscamos el algoritmo "reclassify by
 
 Una vez leído con atención las secciones anteriores deberás de:
 
-1. Selecciona los criterios que consideres más adecuados para idenficar sitios potencialmente útiles como corredores ecológicos. Puedes usar todos los que hemos descrito arriba o solo algunos. Justifica tu decisión.
-1. Integra todos los criterios seleccionados usando la técnica de evaluación multicriterio o los operadores booleanos. En ese guión
-1. Construir dos escenarios diferentes que combinen de manera particular los criterios anteriores usando la técnica de evaluación multicriterio. Para ello deberás de asignar un peso a cada variable. Recuerda que la suma de todos los pesos debe de ser uno. Cuanto mayor sea el peso de cada variable, más importante será la misma en el resultado final. Por ejemplo, si pones un peso de 0.9 en la variable de biodiversidad, el mapa resultante se parecerá mucho al mapa de biodiversidad. En ese caso estarás diciendo que los lugares adecuados para construir corredores son sitios donde hay mucha biodiversidad. Si por el contrario pones el mismo peso a todas las variables, tu resultado será una combinación de todas las variables con la misma importancia. Lo importante aquí es que **justifiques** por qué usas una combinación de pesos y no otra. No hay una solución válida, sino que la clave es que justifiques tu decisión basándote en lo que sabes. Tampoco es obligatorio que uses todas las variables que se describen más arriba. Si decides excluir alguna, justifícalo. También puedes incorporar otras que no se hayan tenido en cuenta, por supuesto. 
-2. Aplica las dos combinaciones de pesos a los criterios. Esto generará una capa con resultados en cada caso. Como tienes dos escenarios, tendrás dos capas. Para aplicar la combinación de pesos tendrás que usar la calculadora de mapas según puedes ver aquí:
+1. Selecciona los criterios que consideres más adecuados para idenficar sitios potencialmente útiles como corredores ecológicos. Puedes usar todos los que hemos descrito arriba o solo algunos. Justifica tu decisión. También puedes incorporar otras que no se hayan tenido en cuenta, por supuesto. 
+1. Integra todos los criterios seleccionados usando una o las dos técnicas descritas más arriba. Puedes combinar las dos o usar solo una. O definir distintos escenarios y usar una de ellas en cada uno. En cada escenario obtendrás un mapa en el que cada píxel de la matriz tiene un valor de idoneidad para convertirse en corredor según los criterios que hayas seleccionado. Es muy importante que justifiques tu decisión.
+1. Reflexiona sobre los resultados obtenidos. Imagina que tienes que tomar la decisión de definir un corredor ecológico en Andalucía y los resultados del análisis anterior son la única información que tienes para adoptarla. Puedes seleccionar zonas candidatas a declararse como corredores ecológicos a partir de los mapas obtenidos en los escenarios que hayas considerado. Es decir, puedes considerar que los criterios para construir corredores ecológicos cambian según la zona. No es lo mismo definir corredores ecológicos en Sierra Morena que en Cabo de Gata, por ejemplo. Una vez hecha la selección, deberás de describir cada zona. Aquí tienes un ejemplo de cómo hacerlo:
 
-```R
- ("apt_biodiv@1" * 0.3)+("apt_naturalidad@1"*0.2)+("apt_dist_natura2000@1"*0.2)+("apt_dist_carreteras@1"*0.1)+("apt_dist_zona_urbana@1"*0.1)+("apt_vias_pecuarias@1"*0.1)
-```
+     + Nombre del corredor: invéntate un nombre para el corredor que aluda a sus características principales. Ej. corredor entre Sierra Morena y la Subbética cordobesa.
 
-3. Guarda el resultado en un archivo con formato *.tif*. Cuando lo muestres en QGIS verás que hay píxeles con valores desde 0 hasta 1. Para seleccionar los píxeles que son mejores candidatos a convertirse en corredores ecológicos, deberás de reclasificar el raster. Para eso, usa la herramienta *reclasify by table*. Deberás de fijar un umbral para la reclasificación. Lo más fácil es que uses los valores que se muestran abajo, pero puedes usar los que tú consideres (siempre que lo justifiques). Guarda el mapa reclasificado con otro nombre que puedas reconocer.
-
-| Minimum | Maximum | Value |
-| :-----: | :-----: | :---: |
-|    0    |   0.5   |   0   |
-|0.5|1|1|
-
-4. Reflexiona sobre los resultados obtenidos. Imagina que tienes que tomar la decisión de definir 3 corredores ecológicos en Andalucía y los resultados del análisis anterior son la única información que tienes para adoptarla. Puedes seleccionar zonas candidatas a declararse como corredores ecológicos a partir de los mapas obtenidos en los dos escenarios. Es decir, puedes considerar que los criterios para construir corredores ecológicos cambian según la zona. No es lo mismo definir corredores ecológicos en Sierra Morena que en Cabo de Gata, por ejemplo. Una vez hecha la selección, deberás de describir cada zona de la siguiente forma:
-   * Nombre del corredor: invéntate un nombre para el corredor que aluda a sus características principales. Ej. corredor entre Sierra Morena y la Subbética cordobesa.
    * Espacios protegidos que conecta: Esta capa vectorial contiene todos los espacios de la Red Natura 2000. Puedes consultar el nombre de cada uno de ellos en QGIs. Justifica por qué, según tu criterio es importante conectar estos espacios protegidos.
+
    * Características de la zona propuesta como corredor: indica cuáles son las principales características de la zona seleccionada atendiendo a los criterios utilizados en el análisis. Por ejemplo, la zona XX se caracteriza por tener una alta biodiversidad y también por tener muchas vías pecuarias. Esto hace que ya tenga funcionalidad como corredor ecológico. O también, la zona YY tiene muchas vías pecuarias, pero también está cerca de núcleos urbanos. Es decir, tiene mucha potencialidad como corredor, pero no es funcional aún. Debería de restaurarse el funcionamiento ecosistémico, etc. Para apoyar tu caracterización puedes incluir imágenes de la zona en cuestión. Bien imágenes aéreas o bien fotos de campo.
+
 
 
 
@@ -250,24 +240,25 @@ Una vez leído con atención las secciones anteriores deberás de:
 Una vez que hayas hecho lo anterior, deberás de preparar un informe que contenga la siguiente información:
 
 * Justificación y descripción de los escenarios de pesos que has utilizado y las variables que has tenido en cuenta.
-* Una ficha descriptiva de cada uno de los 3 corredores que hayas propuesto. Haz referencia en la ficha al escenario que ha permitido la "creación" del corredor seleccionado.
+* Una ficha descriptiva de cada uno de los corredores que hayas propuesto. Haz referencia en la ficha al escenario que ha permitido la "creación" del corredor seleccionado.
 * Análisis crítico: indica qué variables echas en falta o qué aspectos de la metodología utilizada son mejorables según tu criterio. 
 
-Una vez concluido el informe, deberás subirlo al moodle en formato **word**, **libre office** o equivalente. No en formato **pdf**, por favor.
+Una vez concluido el informe, deberás subirlo [aquí](https://www.turnitin.com/?svr=25&session-id=&lang=en_us&r=36.292252621169) en formato **word**, **libre office** o equivalente. No en formato **pdf**, por favor.
 
 
 
 ## Información necesaria para hacer el ejercicio
 
-Abajo tienes los enlaces de descarga de las capas que necesitas para hacer este trabajo. 
++ Este archivo .zip tiene las siguientes capas que necesitarás para hacer el trabajo.:
+  * Capa de aptitud desde el punto de vista de la biodiversidad.
+  * Capa de aptitud desde el punto de vista de la distancia a carreteras.
+  * Capa de aptitud desde el punto de vista de la distancia a espacios de la red Natura 2000.
+  * Capa de aptitud desde el punto de vista de la distancia a zonas urbanas.
+  * Capa de aptitud desde el punto de vista de la naturalidad
+  * Capa de aptitud desde el punto de vista de la presencia de vías pecuarias.
+  * Capa de aptitud desde el punto de vista del tamaño del ENP más cercano a cada píxel de matriz.
+* Delimitación de los espacios de la Red Natura 2000 en Andalucía.
 
-* [Capa de aptitud desde el punto de vista de la biodiversidad.](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/geoinfo/apt_biodiv.tif)
-* [Capa de aptitud desde el punto de vista de la distancia a carreteras.](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/geoinfo/apt_dist_carreteras.tif)
-* [Capa de aptitud desde el punto de vista de la distancia a espacios de la red Natura 2000.](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/geoinfo/apt_dist_natura2000.tif)
-* [Capa de aptitud desde el punto de vista de la distancia a zonas urbanas.](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/geoinfo/apt_dist_zona_urbana.tif)
-* [Capa de aptitud desde el punto de vista de la naturalidad](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/geoinfo/apt_naturalidad.tif)
-* [Capa de aptitud desde el punto de vista de la presencia de vías pecuarias.](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/geoinfo/apt_vias_pecuarias.tif)
-* [Delimitación de los espacios de la Red Natura 2000 en Andalucía.](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/geoinfo/Red_Natura_2000_andalucia.zip)
 
 
 
@@ -288,22 +279,12 @@ En el moodle hay una rúbrica (pincha [aquí](https://es.wikipedia.org/wiki/R%C3
 
 
 
-**PONER EN LA RÚBRICA ALGO PARA VALORAR LA PRESENTACIÓN Y LOS CRITERIOS ESTÉTICOS.**
 
-**incluir una VARIAble que tenga en cuenta el tamaño de las islas (ENPs). Quizás esto les ayude a distinguir mejor los factores implicados en la biogeografía de islas.**
-
-**incluir algo que permita distinguir mejor las variables ecológicas de las antrópias**
 
 
 ## Material útil para hacer la tarea
 
 * [*An integrated approach for studying the land suitability for ecological corridors through spatial multicriteria evaluations*](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/biblio/ecological_corridors_multicriteria.pdf). Artículo científco en el que se inspira este ejercicio.
-
 * [*Natura 2000 sites, public forests and riparian corridors: The connectivity backbone of forest green infrastructure*](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/biblio/ecological_corridors_spain.pdf). Artículo científico en el que se habla de corredores ecológicos en España.
-
 * [*Multi-criteria decision analysis for nature conservation: A review of 20 years of applications*.](https://github.com/aprendiendo-cosas/A_corredores_ecologia_ccaa/raw/2020-2021/biblio/MCE_review.pdf) Revisión sobre el uso de la técnica de evaluación multicriterio aplicada a cuestiones ambientales.
-
-* [Video](https://youtu.be/GIh5lWzQV_k) de una grabación de clase del curso 2019-2020 en la que se describe el contenido del ejercicio.
-
-  
 

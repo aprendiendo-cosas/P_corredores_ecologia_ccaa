@@ -298,4 +298,3 @@ Aquí puedes ver los resultados que, por ahora, arroja [esta](https://docs.googl
 
 <img src="https://github.com/aprendiendo-cosas/P_corredores_ecologia_ccaa/raw/2021_2022/imagenes/desempenio_profesor.png" alt="image" style="zoom:50%;" />
 
-Además, un estudiante dejó el siguiente comentario en el apartado de "sugerencias":
